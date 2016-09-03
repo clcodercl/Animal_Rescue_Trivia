@@ -1,0 +1,23 @@
+Searching 8 files for "alert"
+
+C:\Users\cynthe\Desktop\github\weekfour\Game\assets\javascript\game.js:
+   55              		wins++;
+   56              		$("#wins").html(wins);
+   57:             		alert("Congratulations! You are a winner!");
+   58  
+   59  
+   ..
+   61              		losses++;
+   62              		$("#losses").html(losses);
+   63:             		alert("Awww, sorry, you lose!");
+   64              	}
+   65              }
+
+C:\Users\cynthe\Desktop\github\weekfive\Trivia Homework\assets\javascript\app.js:
+   20  
+   21          if (game.counter === 0) {
+   22:             alert("Time is up! Game over!");
+   23              // game.done();
+   24          }
+
+3 matches across 2 files
