@@ -139,8 +139,8 @@ $(document).ready(function() {
             scoreArea.text("You guessed " + game.correct + " correct and " + game.incorrect + " wrong!");
             $('.wrapper').append(scoreArea)
            
-
-
+            //Answers
+            //How do I make this a table??? Actually, no a table will be too big.
              var AnswerArea = $('<div>');
             AnswerArea.addClass('answers1');
             AnswerArea.text("Question Answers")
