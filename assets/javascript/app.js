@@ -49,14 +49,14 @@ var questionThree = {
 
 var questionFour = {
     question: "4. Outdoor cats live an average of ?",
-    answer: ["7-8 years", "3-5 years", "12-15 years", "8-10 years"],
+    answer: ["7-8 years", "3-5 years", "8-10 years", "12-15 years"],
     correctAnswer: 1,
 };
 
 var questionFive = {
     question: "5. Indoor cats live an average of ?",
-    answer: ["7-8 years", "1-2 million animals", "12-15 years", "8-10 years"],
-    correctAnswer: 2,
+    answer: ["7-8 years", "1-2 million animals", "8-10 years", "12-15 years",],
+    correctAnswer: 3,
 };
 
 
