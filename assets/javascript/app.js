@@ -118,7 +118,7 @@ $(document).ready(function() {
         $('.submit').on('click', function() {
             $('.questionArea').hide();
             submitButton.remove();
-            
+            $('.music').remove();
             $('#counter').remove();
             clearInterval(timer);
 
