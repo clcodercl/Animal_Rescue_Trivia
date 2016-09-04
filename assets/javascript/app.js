@@ -179,37 +179,7 @@ $(document).ready(function() {
             $('.questionArea').append(showQuestion);
 
         }
-
+//How do I push all the correct answers to an output?
     });
-    /*  result: function() {
-          clearInterval(timer);
-          $('.questionArea').remove();
-          $('.questionArea').html("Finished!")
-          $('.questionArea').append("Correct Answers: " + this.correct);
-          $('.questionArea').append("Incorrect Answers: " + this.incorrect);
-      }; */
-    // <div class="question">
-    //   <div class="question-text"></div>
-    //   <div class="options"></div>
-    /*  done: function() {
-          $.each($'input[name="questionOne":checked');
-          if ($(this).val()===questionOne.correctAnswer) {
-              game.correct++;
-          } else {
-              game.incorrect++;
-          };
-      }; */
-
-    //  $('.questionArea').html(questionOne.question);
-    // $('.questionArea').append('<div>hello world</div>');
-
-    //HOW DO I ADD ALL QUESTIONS TO THE PAGE??
-    //HOW DO I: build content of form in jQuery (input type = "radio"...)??
-    //HOW DO I: add submit button??
-
-    /* function displayQuestion() {
-         for (i = 0; i < questions.length; i++) {
-             
-         }
-     } */
+   
 });
