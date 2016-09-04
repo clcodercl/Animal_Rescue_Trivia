@@ -55,7 +55,7 @@ var questionFour = {
 
 var questionFive = {
     question: "5. In the U.S., how many total animals are euthanized in shelters per year?",
-    answer: ["Less than 1 million animals", "3-4 million animals", "3-4 million animals", "5-6 million animals"],
+    answer: ["Less than 1 million animals", "3-4 million animals", "5-6 million animals", "7-8 million animals"],
     correctAnswer: 1,
 };
 
