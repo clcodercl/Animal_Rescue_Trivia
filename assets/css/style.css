@@ -39,8 +39,24 @@
 .answers {
 	font-family: 'serif', serif;
 	font-size: 17px;
+	color: #9e9e9e;
+	align:center;
 }
 
+.answers1 {
+	font-family: 'serif', serif;
+	font-size: 24px;
+	padding: 10px;
+	
+}
+
+.answers1 {
+	font-style: <h4>;
+	font-family: 'serif', serif;
+	font-size: 24px;
+	padding: 10px;
+	
+}
 .invisible {
 	display: none;
 }
