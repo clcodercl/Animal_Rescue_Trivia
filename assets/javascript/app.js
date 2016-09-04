@@ -149,6 +149,56 @@ $(document).ready(function() {
                 location.reload();
             })
 
+                    var AnswerArea = $('<div>');
+            AnswerArea.addClass('answers1');
+            AnswerArea.text("Question 1: How many animals enter U.S. shelters each year? Answer: 5-7 million animals.")
+             $('.wrapper').append(AnswerArea)
+
+             var AnswerArea = $('<div>');
+            AnswerArea.addClass('answers1');
+            AnswerArea.text("Question 2: In government run shelters, what percentage of incoming animals are euthanized? Answer: 64%")
+             $('.wrapper').append(AnswerArea)
+
+              var AnswerArea = $('<div>');
+            AnswerArea.addClass('answers1');
+            AnswerArea.text("Question 3: Outdoor cats live an average of ? Answer: 3-5 years.")
+             $('.wrapper').append(AnswerArea)
+
+              var AnswerArea = $('<div>');
+            AnswerArea.addClass('answers1');
+            AnswerArea.text("Question 4: Indoor cats live an average of ? Answer: 12-15 years.")
+             $('.wrapper').append(AnswerArea)
+
+              var AnswerArea = $('<div>');
+            AnswerArea.addClass('answers1');
+            AnswerArea.text("Question 5: In the U.S., how many total animals are euthanized in shelters per year? Answer: 3-4 million animals.")
+             $('.wrapper').append(AnswerArea)
+
+              var AnswerArea = $('<div>');
+            AnswerArea.addClass('answers1');
+            AnswerArea.text("Question 6: What percentage of cats are reunited with their original owners when picked up stray and end up at a shelter? Answer: 2%.")
+             $('.wrapper').append(AnswerArea)
+
+              var AnswerArea = $('<div>');
+            AnswerArea.addClass('answers1');
+            AnswerArea.text("Question 7: What percentage of dogs are reunited with their original owners when picked up stray and end up at a shelter? Answer: 12.5%.")
+             $('.wrapper').append(AnswerArea)
+
+              var AnswerArea = $('<div>');
+            AnswerArea.addClass('answers1');
+            AnswerArea.text("Question 8: What is the best way for you to prevent dogs and cats from ending up unwanted in shelters? Answer: All listed.")
+             $('.wrapper').append(AnswerArea)
+
+              var AnswerArea = $('<div>');
+            AnswerArea.addClass('answers1');
+            AnswerArea.text("Question 9: How many puppies can one unspayed female dog and her unspayed offspring produce in six years? Answer: 67,000!!")
+             $('.wrapper').append(AnswerArea)
+
+              var AnswerArea = $('<div>');
+            AnswerArea.addClass('answers1');
+            AnswerArea.text("Question 10: How many kittens can one unspayed female cat and her unspayed offspring produce in seven years? Answer: 420,000")
+             $('.wrapper').append(AnswerArea)
+
         });
 
         //game.start();
