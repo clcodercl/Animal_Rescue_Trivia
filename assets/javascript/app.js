@@ -11,7 +11,7 @@ var game = {
         $('#counter').html(game.counter);
 
         if (game.counter === 0) {
-            alert("Game over!");
+            alert("Time is up!");
             // game.done();
         }
     },
