@@ -146,12 +146,12 @@ $(document).ready(function() {
 
             var AnswerArea = $('<div>');
             AnswerArea.addClass('answers1');
-            AnswerArea.text("Question Answers")
+            AnswerArea.text("Answer Key")
              $('.wrapper').append(AnswerArea)
 
             var AnswerArea = $('<div>');
             AnswerArea.addClass('answers2');
-            AnswerArea.html("Question 1: How many animals enter U.S. shelters each year?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 5-7 million million.")
+            AnswerArea.html("Question 1: How many animals enter U.S. shelters each year?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 5-7 million.")
              $('.wrapper').append(AnswerArea)
 
             var AnswerArea = $('<div>');
