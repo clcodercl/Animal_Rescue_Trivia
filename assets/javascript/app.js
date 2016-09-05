@@ -1,14 +1,6 @@
-/*
--make skeleton html/css with classes
--gather questions/answers (data)
--build architecture of questions/answers (radio buttons)
--establish variables of 
-    ~questions, questionsTotal, correctAnswer, incorrectAnswer, correct/incorrect counters
--questions vs correctAnswer = win; correctAnswer < questions = loss
--setTimer for page
--create questionArray with all Questions
--create answerArray with all Answers
--create correctAnswerArray with the correct answers */
+
+
+//game counter
 var game = {
     correct: 0,
     incorrect: 0,
@@ -27,7 +19,7 @@ var game = {
         game.start;
     },
 }
-
+//questions
 var questionOne = {
     question: "1. How many animals enter U.S. shelters each year?",
     answer: ["1-4 million animals", "5-7 million animals", "8-10 million animals", "More than 11 million animals"],
@@ -105,35 +97,42 @@ var questions = [
 
 $(document).ready(function() {
 
+    //start button
+
     $('.startButton').on('click', function() {
         $('.startWindow').addClass('invisible');
         $('.questionArea').removeClass('invisible');
         // $('.finalgif').addClass('invisible');
 
-        var submitButton = $('<button>');
+        //submit button
+
+    var submitButton = $('<button>');
         submitButton.addClass('submit');
         submitButton.text('Submit');
         $('.wrapper').append(submitButton);
 
         $('.submit').on('click', function() {
-            $('.questionArea').hide();
+        $('.questionArea').hide();
             submitButton.remove();
-            $('.music').remove();
-            $('#counter').remove();
-            clearInterval(timer);
+        $('.music').remove();
+        $('#counter').remove();
+        clearInterval(timer);
 
 
-            function checkAnswer() {
-                console.log('hello');
-                $('.input:checked').each(function() {
-                    if ($(this).attr('data-correct') === 'true') {
-                        game.correct++;
-                    } else {
-                        game.incorrect++;
-                    }
-                });
-            };
-            checkAnswer();
+            //This part gives the game scores
+
+    function checkAnswer() {
+        console.log('hello');
+        $('.input:checked').each(function() {
+        if ($(this).attr('data-correct') === 'true') {
+        game.correct++;
+        } else {
+        game.incorrect++;
+        }
+    });
+};
+            //score
+        checkAnswer();
             var scoreArea = $('<div>');
             scoreArea.addClass('scoring');
             scoreArea.text("You guessed " + game.correct + " correct and " + game.incorrect + " wrong!");
@@ -144,89 +143,91 @@ $(document).ready(function() {
             //Answers
             //How do I make this a table??? Actually, no, a table will be too big.
 
-            var AnswerArea = $('<div>');
+        var AnswerArea = $('<div>');
             AnswerArea.addClass('answers1');
             AnswerArea.text("Answer Key")
              $('.wrapper').append(AnswerArea)
 
-            var AnswerArea = $('<div>');
+        var AnswerArea = $('<div>');
             AnswerArea.addClass('answers2');
             AnswerArea.html("Question 1: How many animals enter U.S. shelters each year?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 5-7 million")
              $('.wrapper').append(AnswerArea)
 
-            var AnswerArea = $('<div>');
+        var AnswerArea = $('<div>');
             AnswerArea.addClass('answers2');
             AnswerArea.html("Question 2: In the U.S., how many total animals are euthanized in shelters per year?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 3-4 million")
              $('.wrapper').append(AnswerArea)
 
 
-             var AnswerArea = $('<div>');
+         var AnswerArea = $('<div>');
             AnswerArea.addClass('answers2');
             AnswerArea.html("Question 3: In government run shelters, what percentage of incoming animals are euthanized?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 64%")
              $('.wrapper').append(AnswerArea)
 
-              var AnswerArea = $('<div>');
+        var AnswerArea = $('<div>');
             AnswerArea.addClass('answers2');
             AnswerArea.html("Question 4: Outdoor cats how many years on average?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 3-5")
              $('.wrapper').append(AnswerArea)
 
-              var AnswerArea = $('<div>');
+        var AnswerArea = $('<div>');
             AnswerArea.addClass('answers2');
             AnswerArea.html("Question 5: Indoor cats live how many years on average?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 12-15")
              $('.wrapper').append(AnswerArea)
 
            
-              var AnswerArea = $('<div>');
+        var AnswerArea = $('<div>');
             AnswerArea.addClass('answers2');
             AnswerArea.html("Question 6: What percentage of cats are reunited with their original owners when picked up stray and end up at a shelter?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 2%")
              $('.wrapper').append(AnswerArea)
 
-              var AnswerArea = $('<div>');
+        var AnswerArea = $('<div>');
             AnswerArea.addClass('answers2');
             AnswerArea.html("Question 7: What percentage of dogs are reunited with their original owners when picked up stray and end up at a shelter?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 12.5%")
              $('.wrapper').append(AnswerArea)
 
-              var AnswerArea = $('<div>');
+        var AnswerArea = $('<div>');
             AnswerArea.addClass('answers2');
             AnswerArea.html("Question 8: What is the best way for you to prevent dogs and cats from ending up unwanted in shelters?" + "&nbsp;&nbsp;&nbsp;" + "Answer: Always spay and neuter your pets, make sure you can make a lifetime committment, do not adopt from breeders: all are correct.")
              $('.wrapper').append(AnswerArea)
 
-              var AnswerArea = $('<div>');
+        var AnswerArea = $('<div>');
             AnswerArea.addClass('answers2');
             AnswerArea.html("Question 9: How many puppies can one unspayed female dog and her unspayed offspring produce in six years?"+ "&nbsp;&nbsp;&nbsp;" + "Answer: 67,000")
              $('.wrapper').append(AnswerArea)
 
-              var AnswerArea = $('<div>');
+        var AnswerArea = $('<div>');
             AnswerArea.addClass('answers2');
             AnswerArea.html("Question 10: How many kittens can one unspayed female cat and her unspayed offspring produce in seven years?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 420,000")
              $('.wrapper').append(AnswerArea)
 
-          var refreshButton = $('<button>');
+        var refreshButton = $('<button>');
             refreshButton.addClass('refresh');
             refreshButton.text('Play Again!');
             $('.wrapper').append(refreshButton);
 
             $('.refresh').click(function() {
                 location.reload();
-            })
+    })
 
-        });
+});
 
-        //game.start();
-        timer = setInterval(game.clock, 1000)
+        //timer
+    timer = setInterval(game.clock, 1000)
         $('.questionArea').prepend("Time remaining: <span id='counter'>150</span> Seconds");
-        for (var i = 0; i < questions.length; i++) {
+
+        //functions for questions
+    for (var i = 0; i < questions.length; i++) {
             var showQuestion = $('<div class="question">');
             var questionText = $('<div class="question-text">');
             questionText.html(questions[i].question);
             showQuestion.append(questionText);
 
 
-            var answerGroup = $('<form class="answers">');
-            showQuestion.append(answerGroup);
+                var answerGroup = $('<form class="answers">');
+                showQuestion.append(answerGroup);
 
 
-            for (var j = 0; j < questions[i].answer.length; j++) {
+                for (var j = 0; j < questions[i].answer.length; j++) {
                 var showAnswer = $('<div class="answer"></div>');
                 var input = $('<input type="radio" name="radio" class="input">');
                 input.attr('data-correct', questions[i].correctAnswer === j);
@@ -234,10 +235,7 @@ $(document).ready(function() {
                 showAnswer.append(questions[i].answer[j]);
                 answerGroup.append(showAnswer);
             }
-
-
-
-            $('.questionArea').append(showQuestion);
+                    $('.questionArea').append(showQuestion);
 
         }
 //How do I push all the correct answers to an output?
