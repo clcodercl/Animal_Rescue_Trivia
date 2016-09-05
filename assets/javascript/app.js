@@ -167,12 +167,12 @@ $(document).ready(function() {
 
               var AnswerArea = $('<div>');
             AnswerArea.addClass('answers2');
-            AnswerArea.html("Question 4: Outdoor cats live an average of ?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 3-5 years.")
+            AnswerArea.html("Question 4: Outdoor cats how many years on average?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 3-5")
              $('.wrapper').append(AnswerArea)
 
               var AnswerArea = $('<div>');
             AnswerArea.addClass('answers2');
-            AnswerArea.html("Question 5: Indoor cats live an average of ?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 12-15 years.")
+            AnswerArea.html("Question 5: Indoor cats live how many years on average?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 12-15")
              $('.wrapper').append(AnswerArea)
 
            
