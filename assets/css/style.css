@@ -8,7 +8,7 @@
 
 .submit, .startButton, .refresh {
 	height: 40px;
-	width: 100px;
+	width: 125px;
 	margin-left: 400px;
 }
 
@@ -31,15 +31,27 @@
 
 .question {
 	font-family: 'Indie Flower', serif;
-	font-size: 24px;
-	padding: 10px;
+	padding: 5px;
+	width: 900px;
+    background-color: #d0d0d0;
+    display:block;
+   	color: #5D5959;
+   	font-size: 26px;
+
+	
 	
 }
 
 .answers {
 	font-family: 'serif', serif;
 	font-size: 17px;
-	color: #9e9e9e;
+	padding: 20px;
+	width: 600px;
+    background-color: #d0d0d0;
+    overflow: visible;
+	color: #5D5959;
+	overflow-wrap:visible;
+	align-content:center;
 	
 }
 
@@ -57,7 +69,7 @@
 	font-size: 16px
 	padding: 20px;
 	width: 600px;
-    background-color: #eee;
+    background-color: #d0d0d0;
     overflow: visible;
 	color: #5D5959;
 	overflow-wrap:visible;
