@@ -7,9 +7,9 @@
 }
 
 .submit, .startButton, .refresh {
-	height: 60px;
-	width: 60px;
-	margin-left: 375px;
+	height: 40px;
+	width: 70px;
+	margin-left: 400px;
 }
 
 .refresh {
@@ -45,8 +45,8 @@
 
 .answers1 {
 	font-family: 'Indie Flower', serif;
-	font-size: 24px;
-	padding: 10px;
+	font-size: 25px;
+	align:margin-top;
 	text-align:left-justify;
 	color: #9e9e9e;
 
@@ -87,7 +87,7 @@
 h1 {
 	font-family: 'Indie Flower', serif; 
 	text-align: center;
-	font-size: 75px;
+	font-size: 65px;
 	padding-top: 10px;
 }
 
@@ -102,7 +102,7 @@ h1 {
 
 .scoring {
 	font-family: 'Indie Flower', serif;
-	font-size: 40px;
+	font-size: 30px;
 	text-align: center;
 
 }
