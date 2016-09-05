@@ -151,12 +151,12 @@ $(document).ready(function() {
 
             var AnswerArea = $('<div>');
             AnswerArea.addClass('answers2');
-            AnswerArea.html("Question 1: How many animals enter U.S. shelters each year?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 5-7 million.")
+            AnswerArea.html("Question 1: How many animals enter U.S. shelters each year?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 5-7 million")
              $('.wrapper').append(AnswerArea)
 
             var AnswerArea = $('<div>');
             AnswerArea.addClass('answers2');
-            AnswerArea.html("Question 2: In the U.S., how many total animals are euthanized in shelters per year?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 3-4 million.")
+            AnswerArea.html("Question 2: In the U.S., how many total animals are euthanized in shelters per year?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 3-4 million")
              $('.wrapper').append(AnswerArea)
 
 
