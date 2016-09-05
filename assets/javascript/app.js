@@ -38,7 +38,7 @@ var questionOne = {
 var questionTwo = {
     question: "2. In the U.S., how many total animals are euthanized in shelters per year?",
     answer: ["Less than 1 million animals", "3-4 million animals", "6-7 million animals", "7-8 million animals"],
-    correctAnswer: 1,
+    correctAnswer: 2,
 };
 
 var questionThree = {
@@ -49,14 +49,14 @@ var questionThree = {
 
 var questionFour = {
     question: "4. Outdoor cats live an average of ?",
-    answer: ["3-5 years", "7-8 years", "8-10 years", "12-15 years"],
-    correctAnswer: 0,
+    answer: ["7-8 years", "3-5 years", "8-10 years", "12-15 years"],
+    correctAnswer: 1,
 };
 
 var questionFive = {
     question: "5. Indoor cats live an average of ?",
-    answer: ["5-6 years", "7-8 years", "8-10 years", "12-15 years",],
-    correctAnswer: 3,
+    answer: ["3-5 years", "5-8 years", "8-10 years", "12-15 years",],
+    correctAnswer: 0,
 };
 
 
@@ -138,10 +138,13 @@ $(document).ready(function() {
             scoreArea.addClass('scoring');
             scoreArea.text("You guessed " + game.correct + " correct and " + game.incorrect + " wrong!");
             $('.wrapper').append(scoreArea)
-           
+
+                 
+
             //Answers
             //How do I make this a table??? Actually, no, a table will be too big.
-             var AnswerArea = $('<div>');
+
+            var AnswerArea = $('<div>');
             AnswerArea.addClass('answers1');
             AnswerArea.text("Question Answers")
              $('.wrapper').append(AnswerArea)
@@ -198,7 +201,7 @@ $(document).ready(function() {
             AnswerArea.html("Question 10: How many kittens can one unspayed female cat and her unspayed offspring produce in seven years?" + "&nbsp;&nbsp;&nbsp;" + "Answer: 420,000")
              $('.wrapper').append(AnswerArea)
 
-               var refreshButton = $('<button>');
+          var refreshButton = $('<button>');
             refreshButton.addClass('refresh');
             refreshButton.text('Play Again!');
             $('.wrapper').append(refreshButton);
