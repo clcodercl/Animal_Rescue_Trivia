@@ -29,7 +29,7 @@ var questionOne = {
 
 var questionTwo = {
     question: "2. In the U.S., how many total animals are euthanized in shelters per year?",
-    answer: ["Less than 1 million animals", "3-4 million animals", "6-7 million animals", "7-8 million animals"],
+    answer: ["Less than 1 million animals", "2 million animals", "3-4 million animals", "5-6 million animals"],
     correctAnswer: 2,
 };
 
@@ -41,14 +41,14 @@ var questionThree = {
 
 var questionFour = {
     question: "4. Outdoor cats live an average of ?",
-    answer: ["7-8 years", "3-5 years", "8-10 years", "12-15 years"],
-    correctAnswer: 1,
+    answer: ["3-5 years", "6-7 years", "8-10 years", "12-15 years"],
+    correctAnswer: 0,
 };
 
 var questionFive = {
     question: "5. Indoor cats live an average of ?",
     answer: ["3-5 years", "5-8 years", "8-10 years", "12-15 years",],
-    correctAnswer: 0,
+    correctAnswer: 3,
 };
 
 
@@ -141,7 +141,9 @@ $(document).ready(function() {
                  
 
             //Answers
-            //How do I make this a table??? Actually, no, a table will be too big.
+            //How do I make this a table??? Actually, no, a table will be too big. I want to make it so the score shows up with an ok button
+            //when the ok button is clicked, I want it to trigger a new html page that displays these answers in a table and then displays the play again
+            //button. How do I do that?
 
         var AnswerArea = $('<div>');
             AnswerArea.addClass('answers1');
